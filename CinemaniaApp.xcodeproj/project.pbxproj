@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		211946492B223575003A5357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946482B223575003A5357 /* AppDelegate.swift */; };
+		2119464B2B223575003A5357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119464A2B223575003A5357 /* SceneDelegate.swift */; };
+		2119464D2B223575003A5357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119464C2B223575003A5357 /* ViewController.swift */; };
+		211946502B223575003A5357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2119464E2B223575003A5357 /* Main.storyboard */; };
+		211946522B223576003A5357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211946512B223576003A5357 /* Assets.xcassets */; };
+		211946552B223576003A5357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211946532B223576003A5357 /* LaunchScreen.storyboard */; };
+		211946602B223576003A5357 /* CinemaniaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119465F2B223576003A5357 /* CinemaniaAppTests.swift */; };
+		2119466A2B223576003A5357 /* CinemaniaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946692B223576003A5357 /* CinemaniaAppUITests.swift */; };
+		2119466C2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2119465C2B223576003A5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2119463D2B223575003A5357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 211946442B223575003A5357;
+			remoteInfo = CinemaniaApp;
+		};
+		211946662B223576003A5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2119463D2B223575003A5357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 211946442B223575003A5357;
+			remoteInfo = CinemaniaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		211946452B223575003A5357 /* CinemaniaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaniaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		211946482B223575003A5357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2119464A2B223575003A5357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2119464C2B223575003A5357 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2119464F2B223575003A5357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		211946512B223576003A5357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		211946542B223576003A5357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		211946562B223576003A5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2119465B2B223576003A5357 /* CinemaniaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaniaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2119465F2B223576003A5357 /* CinemaniaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppTests.swift; sourceTree = "<group>"; };
+		211946652B223576003A5357 /* CinemaniaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaniaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		211946692B223576003A5357 /* CinemaniaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppUITests.swift; sourceTree = "<group>"; };
+		2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		211946422B223575003A5357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211946582B223576003A5357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211946622B223576003A5357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2119463C2B223575003A5357 = {
+			isa = PBXGroup;
+			children = (
+				211946472B223575003A5357 /* CinemaniaApp */,
+				2119465E2B223576003A5357 /* CinemaniaAppTests */,
+				211946682B223576003A5357 /* CinemaniaAppUITests */,
+				211946462B223575003A5357 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		211946462B223575003A5357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				211946452B223575003A5357 /* CinemaniaApp.app */,
+				2119465B2B223576003A5357 /* CinemaniaAppTests.xctest */,
+				211946652B223576003A5357 /* CinemaniaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		211946472B223575003A5357 /* CinemaniaApp */ = {
+			isa = PBXGroup;
+			children = (
+				211946482B223575003A5357 /* AppDelegate.swift */,
+				2119464A2B223575003A5357 /* SceneDelegate.swift */,
+				2119464C2B223575003A5357 /* ViewController.swift */,
+				2119464E2B223575003A5357 /* Main.storyboard */,
+				211946512B223576003A5357 /* Assets.xcassets */,
+				211946532B223576003A5357 /* LaunchScreen.storyboard */,
+				211946562B223576003A5357 /* Info.plist */,
+			);
+			path = CinemaniaApp;
+			sourceTree = "<group>";
+		};
+		2119465E2B223576003A5357 /* CinemaniaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2119465F2B223576003A5357 /* CinemaniaAppTests.swift */,
+			);
+			path = CinemaniaAppTests;
+			sourceTree = "<group>";
+		};
+		211946682B223576003A5357 /* CinemaniaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				211946692B223576003A5357 /* CinemaniaAppUITests.swift */,
+				2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */,
+			);
+			path = CinemaniaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		211946442B223575003A5357 /* CinemaniaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2119466F2B223576003A5357 /* Build configuration list for PBXNativeTarget "CinemaniaApp" */;
+			buildPhases = (
+				211946412B223575003A5357 /* Sources */,
+				211946422B223575003A5357 /* Frameworks */,
+				211946432B223575003A5357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinemaniaApp;
+			productName = CinemaniaApp;
+			productReference = 211946452B223575003A5357 /* CinemaniaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2119465A2B223576003A5357 /* CinemaniaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211946722B223576003A5357 /* Build configuration list for PBXNativeTarget "CinemaniaAppTests" */;
+			buildPhases = (
+				211946572B223576003A5357 /* Sources */,
+				211946582B223576003A5357 /* Frameworks */,
+				211946592B223576003A5357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2119465D2B223576003A5357 /* PBXTargetDependency */,
+			);
+			name = CinemaniaAppTests;
+			productName = CinemaniaAppTests;
+			productReference = 2119465B2B223576003A5357 /* CinemaniaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		211946642B223576003A5357 /* CinemaniaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211946752B223576003A5357 /* Build configuration list for PBXNativeTarget "CinemaniaAppUITests" */;
+			buildPhases = (
+				211946612B223576003A5357 /* Sources */,
+				211946622B223576003A5357 /* Frameworks */,
+				211946632B223576003A5357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211946672B223576003A5357 /* PBXTargetDependency */,
+			);
+			name = CinemaniaAppUITests;
+			productName = CinemaniaAppUITests;
+			productReference = 211946652B223576003A5357 /* CinemaniaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2119463D2B223575003A5357 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					211946442B223575003A5357 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					2119465A2B223576003A5357 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 211946442B223575003A5357;
+					};
+					211946642B223576003A5357 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 211946442B223575003A5357;
+					};
+				};
+			};
+			buildConfigurationList = 211946402B223575003A5357 /* Build configuration list for PBXProject "CinemaniaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2119463C2B223575003A5357;
+			productRefGroup = 211946462B223575003A5357 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				211946442B223575003A5357 /* CinemaniaApp */,
+				2119465A2B223576003A5357 /* CinemaniaAppTests */,
+				211946642B223576003A5357 /* CinemaniaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		211946432B223575003A5357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211946552B223576003A5357 /* LaunchScreen.storyboard in Resources */,
+				211946522B223576003A5357 /* Assets.xcassets in Resources */,
+				211946502B223575003A5357 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211946592B223576003A5357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211946632B223576003A5357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		211946412B223575003A5357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2119464D2B223575003A5357 /* ViewController.swift in Sources */,
+				211946492B223575003A5357 /* AppDelegate.swift in Sources */,
+				2119464B2B223575003A5357 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211946572B223576003A5357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211946602B223576003A5357 /* CinemaniaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211946612B223576003A5357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2119466C2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift in Sources */,
+				2119466A2B223576003A5357 /* CinemaniaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2119465D2B223576003A5357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 211946442B223575003A5357 /* CinemaniaApp */;
+			targetProxy = 2119465C2B223576003A5357 /* PBXContainerItemProxy */;
+		};
+		211946672B223576003A5357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 211946442B223575003A5357 /* CinemaniaApp */;
+			targetProxy = 211946662B223576003A5357 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2119464E2B223575003A5357 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2119464F2B223575003A5357 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		211946532B223576003A5357 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				211946542B223576003A5357 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2119466D2B223576003A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2119466E2B223576003A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		211946702B223576003A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KZJPA3L44D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaniaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyguncil.CinemaniaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		211946712B223576003A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KZJPA3L44D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaniaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyguncil.CinemaniaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		211946732B223576003A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KZJPA3L44D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyguncil.CinemaniaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemaniaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CinemaniaApp";
+			};
+			name = Debug;
+		};
+		211946742B223576003A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KZJPA3L44D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyguncil.CinemaniaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemaniaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CinemaniaApp";
+			};
+			name = Release;
+		};
+		211946762B223576003A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KZJPA3L44D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyguncil.CinemaniaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CinemaniaApp;
+			};
+			name = Debug;
+		};
+		211946772B223576003A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KZJPA3L44D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyguncil.CinemaniaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CinemaniaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		211946402B223575003A5357 /* Build configuration list for PBXProject "CinemaniaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2119466D2B223576003A5357 /* Debug */,
+				2119466E2B223576003A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2119466F2B223576003A5357 /* Build configuration list for PBXNativeTarget "CinemaniaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211946702B223576003A5357 /* Debug */,
+				211946712B223576003A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		211946722B223576003A5357 /* Build configuration list for PBXNativeTarget "CinemaniaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211946732B223576003A5357 /* Debug */,
+				211946742B223576003A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		211946752B223576003A5357 /* Build configuration list for PBXNativeTarget "CinemaniaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211946762B223576003A5357 /* Debug */,
+				211946772B223576003A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2119463D2B223575003A5357 /* Project object */;
+}
