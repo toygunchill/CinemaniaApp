@@ -103,6 +103,10 @@ class SplashViewController: UIViewController {
     func updateUI(str: String) {
         DispatchQueue.main.async {
             self.splashLabel.text = str
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                let feedVC = FeedViewController()
+                self.navigationController?.pushViewController(feedVC, animated: true)
+            }
         }
     }
 
