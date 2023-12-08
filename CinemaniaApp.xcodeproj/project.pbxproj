@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		211946492B223575003A5357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946482B223575003A5357 /* AppDelegate.swift */; };
 		2119464B2B223575003A5357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119464A2B223575003A5357 /* SceneDelegate.swift */; };
-		2119464D2B223575003A5357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119464C2B223575003A5357 /* ViewController.swift */; };
+		2119464D2B223575003A5357 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119464C2B223575003A5357 /* SplashViewController.swift */; };
 		211946522B223576003A5357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211946512B223576003A5357 /* Assets.xcassets */; };
 		211946552B223576003A5357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211946532B223576003A5357 /* LaunchScreen.storyboard */; };
 		211946602B223576003A5357 /* CinemaniaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119465F2B223576003A5357 /* CinemaniaAppTests.swift */; };
 		2119466A2B223576003A5357 /* CinemaniaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946692B223576003A5357 /* CinemaniaAppUITests.swift */; };
 		2119466C2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */; };
 		211946852B223D20003A5357 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946842B223D20003A5357 /* ConnectionManager.swift */; };
-		211946872B225916003A5357 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946862B225916003A5357 /* SecondViewController.swift */; };
+		211946872B225916003A5357 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946862B225916003A5357 /* FeedViewController.swift */; };
 		2119468A2B225B15003A5357 /* CoreNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946892B225B15003A5357 /* CoreNetworkManager.swift */; };
 		2119468C2B225B52003A5357 /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119468B2B225B52003A5357 /* NetworkHelpers.swift */; };
 		2119468F2B225B88003A5357 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119468E2B225B88003A5357 /* ErrorTypes.swift */; };
@@ -24,6 +24,9 @@
 		211946932B225E41003A5357 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946922B225E41003A5357 /* NetworkManager.swift */; };
 		211946952B225ED2003A5357 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946942B225ED2003A5357 /* SearchResponse.swift */; };
 		211946972B225EDF003A5357 /* TitleQueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946962B225EDF003A5357 /* TitleQueryResponse.swift */; };
+		21DFE5F32B23B901004E03A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21DFE5F22B23B901004E03A9 /* GoogleService-Info.plist */; };
+		21DFE5F62B23BAF5004E03A9 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 21DFE5F52B23BAF5004E03A9 /* FirebaseRemoteConfig */; };
+		21DFE5F82B23BAF5004E03A9 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 21DFE5F72B23BAF5004E03A9 /* FirebaseRemoteConfigSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,7 @@
 		211946452B223575003A5357 /* CinemaniaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaniaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211946482B223575003A5357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2119464A2B223575003A5357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2119464C2B223575003A5357 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2119464C2B223575003A5357 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		211946512B223576003A5357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211946542B223576003A5357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211946562B223576003A5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +60,7 @@
 		211946692B223576003A5357 /* CinemaniaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppUITests.swift; sourceTree = "<group>"; };
 		2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		211946842B223D20003A5357 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
-		211946862B225916003A5357 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		211946862B225916003A5357 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		211946892B225B15003A5357 /* CoreNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkManager.swift; sourceTree = "<group>"; };
 		2119468B2B225B52003A5357 /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
 		2119468E2B225B88003A5357 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		211946922B225E41003A5357 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		211946942B225ED2003A5357 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		211946962B225EDF003A5357 /* TitleQueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleQueryResponse.swift; sourceTree = "<group>"; };
+		21DFE5F22B23B901004E03A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DFE5F62B23BAF5004E03A9 /* FirebaseRemoteConfig in Frameworks */,
+				21DFE5F82B23BAF5004E03A9 /* FirebaseRemoteConfigSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,11 +130,10 @@
 				2119467C2B22396A003A5357 /* Others */,
 				211946482B223575003A5357 /* AppDelegate.swift */,
 				2119464A2B223575003A5357 /* SceneDelegate.swift */,
-				2119464C2B223575003A5357 /* ViewController.swift */,
-				211946862B225916003A5357 /* SecondViewController.swift */,
 				211946512B223576003A5357 /* Assets.xcassets */,
 				211946532B223576003A5357 /* LaunchScreen.storyboard */,
 				211946562B223576003A5357 /* Info.plist */,
+				21DFE5F22B23B901004E03A9 /* GoogleService-Info.plist */,
 			);
 			path = CinemaniaApp;
 			sourceTree = "<group>";
@@ -153,32 +158,10 @@
 		211946782B223938003A5357 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				2119467A2B223957003A5357 /* Ekran */,
+				21DFE5F92B23CAFD004E03A9 /* Splash */,
+				21DFE5FA2B23CB0F004E03A9 /* Feed */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		211946792B223941003A5357 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		2119467A2B223957003A5357 /* Ekran */ = {
-			isa = PBXGroup;
-			children = (
-				2119467B2B223961003A5357 /* ViewController */,
-				211946792B223941003A5357 /* ViewModel */,
-			);
-			path = Ekran;
-			sourceTree = "<group>";
-		};
-		2119467B2B223961003A5357 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		2119467C2B22396A003A5357 /* Others */ = {
@@ -239,6 +222,22 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		21DFE5F92B23CAFD004E03A9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				2119464C2B223575003A5357 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		21DFE5FA2B23CB0F004E03A9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				211946862B225916003A5357 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,6 +254,10 @@
 			dependencies = (
 			);
 			name = CinemaniaApp;
+			packageProductDependencies = (
+				21DFE5F52B23BAF5004E03A9 /* FirebaseRemoteConfig */,
+				21DFE5F72B23BAF5004E03A9 /* FirebaseRemoteConfigSwift */,
+			);
 			productName = CinemaniaApp;
 			productReference = 211946452B223575003A5357 /* CinemaniaApp.app */;
 			productType = "com.apple.product-type.application";
@@ -327,6 +330,9 @@
 				Base,
 			);
 			mainGroup = 2119463C2B223575003A5357;
+			packageReferences = (
+				21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 211946462B223575003A5357 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +351,7 @@
 			files = (
 				211946552B223576003A5357 /* LaunchScreen.storyboard in Resources */,
 				211946522B223576003A5357 /* Assets.xcassets in Resources */,
+				21DFE5F32B23B901004E03A9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,9 +384,9 @@
 				2119468A2B225B15003A5357 /* CoreNetworkManager.swift in Sources */,
 				211946912B225BCB003A5357 /* Logger.swift in Sources */,
 				211946952B225ED2003A5357 /* SearchResponse.swift in Sources */,
-				2119464D2B223575003A5357 /* ViewController.swift in Sources */,
+				2119464D2B223575003A5357 /* SplashViewController.swift in Sources */,
 				211946492B223575003A5357 /* AppDelegate.swift in Sources */,
-				211946872B225916003A5357 /* SecondViewController.swift in Sources */,
+				211946872B225916003A5357 /* FeedViewController.swift in Sources */,
 				2119464B2B223575003A5357 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +724,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21DFE5F52B23BAF5004E03A9 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		21DFE5F72B23BAF5004E03A9 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2119463D2B223575003A5357 /* Project object */;
 }
