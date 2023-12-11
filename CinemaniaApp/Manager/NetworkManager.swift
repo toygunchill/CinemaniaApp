@@ -13,7 +13,7 @@ protocol IdAndTitleQueryMakeable: AnyObject {
 }
 
 protocol SearchQueryMakeable: AnyObject {
-    func makeSearchQuery(page: Int, word: String, year: String?, type: String?, completion: @escaping (Result< SearchResponse, ErrosTypes>) -> Void)
+    func makeSearchQuery(page: Int, word: String, completion: @escaping (Result< SearchResponse, ErrosTypes>) -> Void)
 }
 
 final class NetworkManager {
@@ -36,8 +36,8 @@ extension NetworkManager: IdAndTitleQueryMakeable {
 
 extension NetworkManager: SearchQueryMakeable {
 
-    func makeSearchQuery(page: Int, word: String, year: String?, type: String?, completion: @escaping (Result<SearchResponse, ErrosTypes>) -> Void) {
-        let endPoint = Endpoint.search(searchWord: word, year: year, type: type, page: page)
+    func makeSearchQuery(page: Int, word: String, completion: @escaping (Result<SearchResponse, ErrosTypes>) -> Void) {
+        let endPoint = Endpoint.search(searchWord: word, page: page)
         coreManager.request(endPoint, completion: completion)
     }
 }

@@ -25,6 +25,10 @@
 		211946952B225ED2003A5357 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946942B225ED2003A5357 /* SearchResponse.swift */; };
 		211946972B225EDF003A5357 /* TitleQueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946962B225EDF003A5357 /* TitleQueryResponse.swift */; };
 		2148DF9D2B2641100009DEFF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2148DF9C2B2641100009DEFF /* FirebaseMessaging */; };
+		215BC2A42B279E740042906C /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215BC2A32B279E740042906C /* AnalyticsManager.swift */; };
+		215BC2A62B279E9A0042906C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215BC2A52B279E9A0042906C /* CustomLabel.swift */; };
+		215BC2A92B279FB50042906C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 215BC2A82B279FB50042906C /* FirebaseAnalytics */; };
+		215BC2AB2B279FB50042906C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 215BC2AA2B279FB50042906C /* FirebaseAnalyticsSwift */; };
 		2162FC462B2500960049DB0C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162FC452B2500960049DB0C /* MovieCell.swift */; };
 		2162FC492B2501290049DB0C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2162FC482B2501290049DB0C /* Kingfisher */; };
 		2162FC4B2B2501580049DB0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162FC4A2B2501580049DB0C /* Constants.swift */; };
@@ -75,6 +79,8 @@
 		211946922B225E41003A5357 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		211946942B225ED2003A5357 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		211946962B225EDF003A5357 /* TitleQueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleQueryResponse.swift; sourceTree = "<group>"; };
+		215BC2A32B279E740042906C /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		215BC2A52B279E9A0042906C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		2162FC452B2500960049DB0C /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		2162FC4A2B2501580049DB0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2162FC4C2B251B9E0049DB0C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -88,9 +94,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215BC2AB2B279FB50042906C /* FirebaseAnalyticsSwift in Frameworks */,
 				2148DF9D2B2641100009DEFF /* FirebaseMessaging in Frameworks */,
 				2162FC492B2501290049DB0C /* Kingfisher in Frameworks */,
 				21DFE5F62B23BAF5004E03A9 /* FirebaseRemoteConfig in Frameworks */,
+				215BC2A92B279FB50042906C /* FirebaseAnalytics in Frameworks */,
 				21DFE5F82B23BAF5004E03A9 /* FirebaseRemoteConfigSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +127,7 @@
 				2119465E2B223576003A5357 /* CinemaniaAppTests */,
 				211946682B223576003A5357 /* CinemaniaAppUITests */,
 				211946462B223575003A5357 /* Products */,
+				215BC2A72B279FB50042906C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +199,7 @@
 		2119467E2B22397B003A5357 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				215BC2A52B279E9A0042906C /* CustomLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,8 +244,16 @@
 				211946842B223D20003A5357 /* ConnectionManager.swift */,
 				211946892B225B15003A5357 /* CoreNetworkManager.swift */,
 				211946922B225E41003A5357 /* NetworkManager.swift */,
+				215BC2A32B279E740042906C /* AnalyticsManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		215BC2A72B279FB50042906C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2162FC4E2B25275E0049DB0C /* Detail */ = {
@@ -286,6 +304,8 @@
 				21DFE5F72B23BAF5004E03A9 /* FirebaseRemoteConfigSwift */,
 				2162FC482B2501290049DB0C /* Kingfisher */,
 				2148DF9C2B2641100009DEFF /* FirebaseMessaging */,
+				215BC2A82B279FB50042906C /* FirebaseAnalytics */,
+				215BC2AA2B279FB50042906C /* FirebaseAnalyticsSwift */,
 			);
 			productName = CinemaniaApp;
 			productReference = 211946452B223575003A5357 /* CinemaniaApp.app */;
@@ -406,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215BC2A42B279E740042906C /* AnalyticsManager.swift in Sources */,
 				211946852B223D20003A5357 /* ConnectionManager.swift in Sources */,
+				215BC2A62B279E9A0042906C /* CustomLabel.swift in Sources */,
 				2162FC522B2527810049DB0C /* DetailViewController.swift in Sources */,
 				2162FC462B2500960049DB0C /* MovieCell.swift in Sources */,
 				2119468C2B225B52003A5357 /* NetworkHelpers.swift in Sources */,
@@ -784,6 +806,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		215BC2A82B279FB50042906C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		215BC2AA2B279FB50042906C /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
 		};
 		2162FC482B2501290049DB0C /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

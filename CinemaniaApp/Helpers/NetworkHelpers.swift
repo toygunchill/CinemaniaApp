@@ -25,7 +25,7 @@ enum HTTPMethod: String {
 }
 
 enum Endpoint {
-    case search(searchWord: String, year: String?, type: String?, page: Int?)
+    case search(searchWord: String, page: Int?)
     case titleSearch(title: String)
     case idSearch(id: String)
 }
@@ -79,18 +79,8 @@ extension Endpoint: EndpointProtocol {
             ]
         }
         
-        if case .search(let searchWord, let year, let type, let page) = self {
+        if case .search(let searchWord, let page) = self {
             var queryItems: [URLQueryItem] = [urlqueryItemOfApiKey, URLQueryItem(name: "s", value: searchWord)]
-            
-            if let year = year {
-                let yearQueryItem = URLQueryItem(name: "y", value: String(describing: year))
-                queryItems.append(yearQueryItem)
-            }
-            
-            if let type = type {
-                let typeQueryItem = URLQueryItem(name: "type", value: String(describing: type))
-                queryItems.append(typeQueryItem)
-            }
             
             if let page = page {
                 let pageQueryItem = URLQueryItem(name: "page", value: String(describing: page))

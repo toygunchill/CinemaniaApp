@@ -9,6 +9,8 @@ import UIKit
 
 protocol FeedViewInterface: AnyObject {
     func reloadCollectionView()
+    func updateData(data: [Search])
+    var data: [Search]? { get set }
 }
 
 final class FeedViewController: UIViewController {
@@ -46,6 +48,7 @@ final class FeedViewController: UIViewController {
     }()
     
     private var page: Int = 1
+    var data: [Search]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +95,6 @@ final class FeedViewController: UIViewController {
     private func setupSearchController() {
         searchController.delegate = self
         searchController.searchBar.delegate = self
-        searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search"
         searchController.searchBar.tintColor = .black
@@ -116,8 +118,9 @@ extension FeedViewController : UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.item == (viewModel.movies.count) - 3 {
-            self.viewModel.fetchSearchMovies(isScrolled: true, word: "batman", year: "", type: "")
+        if indexPath.item == (viewModel.movies.count) - 1{
+            guard let text = searchController.searchBar.text else { return }
+            self.viewModel.fetchSearchMovies(isScrolled: true, word: text)
         }
     }
     
@@ -125,8 +128,14 @@ extension FeedViewController : UICollectionViewDataSource, UICollectionViewDeleg
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as? MovieCell else {
             return UICollectionViewCell()
         }
-        let data = viewModel.movies[indexPath.item]
-        cell.configureCell(posterImage: data.poster ?? "", titleLabel: data.title ?? "", yearLabel: data.year ?? "", typeLabel: data.type?.rawValue ?? "")
+        if let movie = data?[indexPath.item] {
+            if let poster = movie.poster,
+               let title = movie.title,
+               let year = movie.year,
+               let type = movie.type?.rawValue {
+                cell.configureCell(posterImage: poster, titleLabel: title, yearLabel: year, typeLabel: type)
+            }
+        }
         
         return cell
     }
@@ -147,23 +156,24 @@ extension FeedViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension FeedViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        //
-    }
-}
-
 extension FeedViewController: UISearchBarDelegate, UISearchControllerDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.viewModel.fetchSearchMovies(isScrolled: false, word: searchText, year: "", type: "")
+        self.viewModel.fetchSearchMovies(isScrolled: false, word: searchText)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        //
+        self.viewModel.cleanMovies()
     }
 }
 
 extension FeedViewController: FeedViewInterface {
+    func updateData(data: [Search]) {
+        DispatchQueue.main.async {
+            self.data = data
+            self.reloadCollectionView()
+        }
+    }
+    
     func reloadCollectionView() {
         DispatchQueue.main.async {
             self.moviesCollectionView.reloadData()
