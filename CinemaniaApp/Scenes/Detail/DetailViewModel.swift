@@ -8,27 +8,35 @@
 import Foundation
 
 
-protocol DetailViewModelMakeable {
+protocol DetailViewModelInterface {
     func fetchDetailMoviesUseTitle(title: String?)
     func fetchDetailMoviesUseId(id: String?)
+    var data: TitleQueryResponse? { get set }
 }
 
 final class DetailViewModel {
     
-    var networkManager: (IdAndTitleQueryMakeable)?
+    private weak var view: DetailViewInterface?
+    private var networkManager: (IdAndTitleQueryMakeable)?
     
-    init(networkManager: IdAndTitleQueryMakeable) {
+    var data: TitleQueryResponse?
+    
+    init(view: DetailViewInterface, networkManager: IdAndTitleQueryMakeable) {
         self.networkManager = networkManager
+        self.view = view
     }
 }
 
-extension DetailViewModel: DetailViewModelMakeable {
+extension DetailViewModel: DetailViewModelInterface {
+    
     func fetchDetailMoviesUseTitle(title: String?) {
         if let title {
             networkManager?.makeQueryWithTitle(title: title, completion: { [weak self] result in
                 guard let self = self else { return }
                 switch result {
                 case .success(let success):
+                    self.data = success
+                    self.view?.updateData(data: success)
                     print(success)
                 case .failure(let failure):
                     print(failure)
@@ -43,6 +51,8 @@ extension DetailViewModel: DetailViewModelMakeable {
                 guard let self = self else { return }
                 switch result {
                 case .success(let success):
+                    self.data = success
+                    self.view?.updateData(data: success)
                     print(success)
                 case .failure(let failure):
                     print(failure)

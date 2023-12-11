@@ -7,23 +7,26 @@
 
 import UIKit
 
+protocol DetailViewInterface: AnyObject {
+    var id: String? {get set}
+    func updateData(data: TitleQueryResponse)
+}
+
 class DetailViewController: UIViewController {
+    
+    private lazy var viewModel = DetailViewModel(view: self, networkManager: NetworkManager.shared)
+    var id: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewModel.fetchDetailMoviesUseId(id: id)
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension DetailViewController: DetailViewInterface {
+    func updateData(data: TitleQueryResponse) {
+        //data burada yerleştirilecek
     }
-    */
-
 }

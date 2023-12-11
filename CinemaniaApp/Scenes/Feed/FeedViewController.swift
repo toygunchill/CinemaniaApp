@@ -132,7 +132,9 @@ extension FeedViewController : UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+        let detailViewController = DetailViewController()
+        detailViewController.id = viewModel.movies[indexPath.item].imdbID
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
