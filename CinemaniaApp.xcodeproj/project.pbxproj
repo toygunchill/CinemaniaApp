@@ -24,6 +24,7 @@
 		211946932B225E41003A5357 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946922B225E41003A5357 /* NetworkManager.swift */; };
 		211946952B225ED2003A5357 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946942B225ED2003A5357 /* SearchResponse.swift */; };
 		211946972B225EDF003A5357 /* TitleQueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946962B225EDF003A5357 /* TitleQueryResponse.swift */; };
+		2148DF9D2B2641100009DEFF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2148DF9C2B2641100009DEFF /* FirebaseMessaging */; };
 		2162FC462B2500960049DB0C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162FC452B2500960049DB0C /* MovieCell.swift */; };
 		2162FC492B2501290049DB0C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2162FC482B2501290049DB0C /* Kingfisher */; };
 		2162FC4B2B2501580049DB0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162FC4A2B2501580049DB0C /* Constants.swift */; };
@@ -87,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2148DF9D2B2641100009DEFF /* FirebaseMessaging in Frameworks */,
 				2162FC492B2501290049DB0C /* Kingfisher in Frameworks */,
 				21DFE5F62B23BAF5004E03A9 /* FirebaseRemoteConfig in Frameworks */,
 				21DFE5F82B23BAF5004E03A9 /* FirebaseRemoteConfigSwift in Frameworks */,
@@ -283,6 +285,7 @@
 				21DFE5F52B23BAF5004E03A9 /* FirebaseRemoteConfig */,
 				21DFE5F72B23BAF5004E03A9 /* FirebaseRemoteConfigSwift */,
 				2162FC482B2501290049DB0C /* Kingfisher */,
+				2148DF9C2B2641100009DEFF /* FirebaseMessaging */,
 			);
 			productName = CinemaniaApp;
 			productReference = 211946452B223575003A5357 /* CinemaniaApp.app */;
@@ -777,6 +780,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2148DF9C2B2641100009DEFF /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
 		2162FC482B2501290049DB0C /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2162FC472B2501290049DB0C /* XCRemoteSwiftPackageReference "Kingfisher" */;
