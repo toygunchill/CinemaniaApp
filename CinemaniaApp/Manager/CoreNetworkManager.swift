@@ -11,7 +11,7 @@ protocol CoreNetworkManagerInterface {
     func request<T: Codable>(_ endpoint: Endpoint,completion: @escaping((Result<T,ErrosTypes>)->()))
 }
 
-class CoreNetworkManager: CoreNetworkManagerInterface {
+final class CoreNetworkManager: CoreNetworkManagerInterface {
     init() {}
 
     func request<T: Codable>(_ endpoint: Endpoint, completion: @escaping (Result<T, ErrosTypes>) -> Void) {

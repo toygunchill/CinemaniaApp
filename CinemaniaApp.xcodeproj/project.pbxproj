@@ -12,9 +12,6 @@
 		2119464D2B223575003A5357 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119464C2B223575003A5357 /* SplashViewController.swift */; };
 		211946522B223576003A5357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211946512B223576003A5357 /* Assets.xcassets */; };
 		211946552B223576003A5357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211946532B223576003A5357 /* LaunchScreen.storyboard */; };
-		211946602B223576003A5357 /* CinemaniaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119465F2B223576003A5357 /* CinemaniaAppTests.swift */; };
-		2119466A2B223576003A5357 /* CinemaniaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946692B223576003A5357 /* CinemaniaAppUITests.swift */; };
-		2119466C2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */; };
 		211946852B223D20003A5357 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946842B223D20003A5357 /* ConnectionManager.swift */; };
 		211946872B225916003A5357 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946862B225916003A5357 /* FeedViewController.swift */; };
 		2119468A2B225B15003A5357 /* CoreNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211946892B225B15003A5357 /* CoreNetworkManager.swift */; };
@@ -29,6 +26,8 @@
 		215BC2A62B279E9A0042906C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215BC2A52B279E9A0042906C /* CustomLabel.swift */; };
 		215BC2A92B279FB50042906C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 215BC2A82B279FB50042906C /* FirebaseAnalytics */; };
 		215BC2AB2B279FB50042906C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 215BC2AA2B279FB50042906C /* FirebaseAnalyticsSwift */; };
+		215BC2AF2B27B6900042906C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215BC2AE2B27B6900042906C /* UIImageView+Extensions.swift */; };
+		215BC2B12B27C29D0042906C /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215BC2B02B27C29D0042906C /* SplashViewModel.swift */; };
 		2162FC462B2500960049DB0C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162FC452B2500960049DB0C /* MovieCell.swift */; };
 		2162FC492B2501290049DB0C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2162FC482B2501290049DB0C /* Kingfisher */; };
 		2162FC4B2B2501580049DB0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2162FC4A2B2501580049DB0C /* Constants.swift */; };
@@ -58,18 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		211946452B223575003A5357 /* CinemaniaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaniaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		211946452B223575003A5357 /* CinemaniaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CinemaniaApp.app; path = "/Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/build/Debug-iphoneos/CinemaniaApp.app"; sourceTree = "<absolute>"; };
 		211946482B223575003A5357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2119464A2B223575003A5357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2119464C2B223575003A5357 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		211946512B223576003A5357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211946542B223576003A5357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211946562B223576003A5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2119465B2B223576003A5357 /* CinemaniaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaniaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2119465F2B223576003A5357 /* CinemaniaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppTests.swift; sourceTree = "<group>"; };
-		211946652B223576003A5357 /* CinemaniaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaniaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		211946692B223576003A5357 /* CinemaniaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppUITests.swift; sourceTree = "<group>"; };
-		2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaniaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2119465B2B223576003A5357 /* CinemaniaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CinemaniaAppTests.xctest; path = "/Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/build/Debug-iphoneos/CinemaniaAppTests.xctest"; sourceTree = "<absolute>"; };
+		211946652B223576003A5357 /* CinemaniaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CinemaniaAppUITests.xctest; path = "/Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/build/Debug-iphoneos/CinemaniaAppUITests.xctest"; sourceTree = "<absolute>"; };
 		211946842B223D20003A5357 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		211946862B225916003A5357 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		211946892B225B15003A5357 /* CoreNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkManager.swift; sourceTree = "<group>"; };
@@ -81,6 +77,8 @@
 		211946962B225EDF003A5357 /* TitleQueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleQueryResponse.swift; sourceTree = "<group>"; };
 		215BC2A32B279E740042906C /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		215BC2A52B279E9A0042906C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		215BC2AE2B27B6900042906C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		215BC2B02B27C29D0042906C /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		2162FC452B2500960049DB0C /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		2162FC4A2B2501580049DB0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2162FC4C2B251B9E0049DB0C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -124,21 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				211946472B223575003A5357 /* CinemaniaApp */,
-				2119465E2B223576003A5357 /* CinemaniaAppTests */,
-				211946682B223576003A5357 /* CinemaniaAppUITests */,
-				211946462B223575003A5357 /* Products */,
-				215BC2A72B279FB50042906C /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		211946462B223575003A5357 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				211946452B223575003A5357 /* CinemaniaApp.app */,
-				2119465B2B223576003A5357 /* CinemaniaAppTests.xctest */,
-				211946652B223576003A5357 /* CinemaniaAppUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		211946472B223575003A5357 /* CinemaniaApp */ = {
@@ -150,7 +134,6 @@
 				211946882B225AEB003A5357 /* Manager */,
 				2119467E2B22397B003A5357 /* Views */,
 				211946782B223938003A5357 /* Scenes */,
-				2119467C2B22396A003A5357 /* Others */,
 				211946482B223575003A5357 /* AppDelegate.swift */,
 				2119464A2B223575003A5357 /* SceneDelegate.swift */,
 				211946512B223576003A5357 /* Assets.xcassets */,
@@ -159,23 +142,6 @@
 				21DFE5F22B23B901004E03A9 /* GoogleService-Info.plist */,
 			);
 			path = CinemaniaApp;
-			sourceTree = "<group>";
-		};
-		2119465E2B223576003A5357 /* CinemaniaAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				2119465F2B223576003A5357 /* CinemaniaAppTests.swift */,
-			);
-			path = CinemaniaAppTests;
-			sourceTree = "<group>";
-		};
-		211946682B223576003A5357 /* CinemaniaAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				211946692B223576003A5357 /* CinemaniaAppUITests.swift */,
-				2119466B2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift */,
-			);
-			path = CinemaniaAppUITests;
 			sourceTree = "<group>";
 		};
 		211946782B223938003A5357 /* Scenes */ = {
@@ -188,17 +154,10 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		2119467C2B22396A003A5357 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				211946832B2239BF003A5357 /* Fonts */,
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
 		2119467E2B22397B003A5357 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2162FC452B2500960049DB0C /* MovieCell.swift */,
 				215BC2A52B279E9A0042906C /* CustomLabel.swift */,
 			);
 			path = Views;
@@ -216,6 +175,7 @@
 		211946812B22399C003A5357 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				215BC2AE2B27B6900042906C /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -231,13 +191,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		211946832B2239BF003A5357 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		211946882B225AEB003A5357 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,13 +200,6 @@
 				215BC2A32B279E740042906C /* AnalyticsManager.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		215BC2A72B279FB50042906C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2162FC4E2B25275E0049DB0C /* Detail */ = {
@@ -269,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				2119464C2B223575003A5357 /* SplashViewController.swift */,
+				215BC2B02B27C29D0042906C /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -278,7 +225,6 @@
 			children = (
 				211946862B225916003A5357 /* FeedViewController.swift */,
 				2162FC4C2B251B9E0049DB0C /* FeedViewModel.swift */,
-				2162FC452B2500960049DB0C /* MovieCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -383,7 +329,7 @@
 				21DFE5F42B23BA11004E03A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				2162FC472B2501290049DB0C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
-			productRefGroup = 211946462B223575003A5357 /* Products */;
+			productRefGroup = 2119463C2B223575003A5357;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -436,9 +382,11 @@
 				211946932B225E41003A5357 /* NetworkManager.swift in Sources */,
 				2162FC4D2B251B9E0049DB0C /* FeedViewModel.swift in Sources */,
 				2119468F2B225B88003A5357 /* ErrorTypes.swift in Sources */,
+				215BC2AF2B27B6900042906C /* UIImageView+Extensions.swift in Sources */,
 				2119468A2B225B15003A5357 /* CoreNetworkManager.swift in Sources */,
 				211946912B225BCB003A5357 /* Logger.swift in Sources */,
 				211946952B225ED2003A5357 /* SearchResponse.swift in Sources */,
+				215BC2B12B27C29D0042906C /* SplashViewModel.swift in Sources */,
 				2119464D2B223575003A5357 /* SplashViewController.swift in Sources */,
 				211946492B223575003A5357 /* AppDelegate.swift in Sources */,
 				2162FC4B2B2501580049DB0C /* Constants.swift in Sources */,
@@ -452,7 +400,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211946602B223576003A5357 /* CinemaniaAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,8 +407,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2119466C2B223576003A5357 /* CinemaniaAppUITestsLaunchTests.swift in Sources */,
-				2119466A2B223576003A5357 /* CinemaniaAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

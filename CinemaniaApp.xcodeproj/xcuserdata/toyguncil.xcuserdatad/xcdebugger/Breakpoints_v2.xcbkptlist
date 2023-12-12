@@ -182,22 +182,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CE866CE9-AB09-40D7-8C3F-DD7887537810"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "scrollViewDidScroll(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DB01C4DD-48DF-474D-A2EA-872B8B7A7A0F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -209,21 +193,53 @@
             endingLineNumber = "37"
             landmarkName = "messaging(_:didReceiveRegistrationToken:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB01C4DD-48DF-474D-A2EA-872B8B7A7A0F - 50f7cc09a231bbee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaniaApp.AppDelegate.messaging(_: __C.FIRMessaging, didReceiveRegistrationToken: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "DB01C4DD-48DF-474D-A2EA-872B8B7A7A0F - 50f7cc09a231bbcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaniaApp.AppDelegate.messaging(_: __C.FIRMessaging, didReceiveRegistrationToken: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B5C501A-B42E-4717-A3AB-0D1AD4D0557F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "fetchSearchMovies(isScrolled:word:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchMovies(isScrolled:word:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -286,87 +302,22 @@
                   endingLineNumber = "42"
                   offsetFromSymbolStart = "512">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5F5B5CD5-A0C0-4144-8A69-85B2CDCE80E5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "fetchSearchMovies(isScrolled:word:)"
-            landmarkType = "7">
-            <Locations>
                <Location
-                  uuid = "5F5B5CD5-A0C0-4144-8A69-85B2CDCE80E5 - c165b3635b73e7fc"
+                  uuid = "2B5C501A-B42E-4717-A3AB-0D1AD4D0557F - cb2db610cf96c7b7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;CinemaniaApp.SearchResponse, CinemaniaApp.ErrosTypes&gt;) -&gt; () in CinemaniaApp.FeedViewModel.fetchSearchMovies(isScrolled: Swift.Bool, word: Swift.String, year: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  symbolName = "CinemaniaApp.FeedViewModel.fetchMovies(isScrolled: Swift.Bool, word: Swift.String) -&gt; ()"
                   moduleName = "CinemaniaApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "1180">
-               </Location>
-               <Location
-                  uuid = "5F5B5CD5-A0C0-4144-8A69-85B2CDCE80E5 - c165b3635b73e770"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;CinemaniaApp.SearchResponse, CinemaniaApp.ErrosTypes&gt;) -&gt; () in CinemaniaApp.FeedViewModel.fetchSearchMovies(isScrolled: Swift.Bool, word: Swift.String, year: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "CinemaniaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "1128">
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "464">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B4AFE506-FF84-4FC1-BA12-1F17AEF4C603"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "fetchSearchMovies(isScrolled:word:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C5F108A8-164C-4AB9-824A-712A2194C9B3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "fetchSearchMovies(isScrolled:word:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -379,8 +330,8 @@
             filePath = "CinemaniaApp/Scenes/Detail/DetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "fetchDetailMoviesUseId(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -395,8 +346,8 @@
             filePath = "CinemaniaApp/Scenes/Detail/DetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "fetchDetailMoviesUseId(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -404,65 +355,318 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "79188A3B-549A-4F1C-B252-E49AF7C5CDCF"
+            uuid = "49E6F29D-E469-4306-A296-08277B90E171"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
+            filePath = "CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "fetchSearchMovies(isScrolled:word:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchValue()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "49E6F29D-E469-4306-A296-08277B90E171 - 7573393c28304b1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "49E6F29D-E469-4306-A296-08277B90E171 - 7573393c28304a13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AEF8497-988F-4C41-BB5C-AC54B43712E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetchValue()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4AEF8497-988F-4C41-BB5C-AC54B43712E9 - 7573393c283048c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "4AEF8497-988F-4C41-BB5C-AC54B43712E9 - 5335986230ed37a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRRemoteConfigFetchStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "4AEF8497-988F-4C41-BB5C-AC54B43712E9 - 8c5f1eb79911e908"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (__C.FIRRemoteConfigFetchStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AC3623A-3C06-45BA-9839-B8529F1F765B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchValue()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5AC3623A-3C06-45BA-9839-B8529F1F765B - 8c5f1eb79911e846"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (__C.FIRRemoteConfigFetchStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "5AC3623A-3C06-45BA-9839-B8529F1F765B - 8c5f1eb79911e846"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (__C.FIRRemoteConfigFetchStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "752">
+               </Location>
+               <Location
+                  uuid = "5AC3623A-3C06-45BA-9839-B8529F1F765B - 8c5f1eb79911e846"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (__C.FIRRemoteConfigFetchStatus, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CinemaniaApp.SplashViewModel.fetchValue() -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Splash/SplashViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1856">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75C48886-EB3F-4A59-8320-FA2ACC17F8F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Extensions/UIImageView+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "setImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B248B010-F7EF-45B9-884E-1A46E05A9C4A"
+            uuid = "F5F99730-E866-4BC6-9E00-A3BA43F5B372"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Extensions/UIImageView+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "setImage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5588C79-6748-4585-8669-7AF9D6F9089A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Extensions/UIImageView+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "setImage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EFEEAD4-DAD7-4D09-B3F6-05E79ACB5E1D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Scenes/Feed/MovieCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "configureCell(posterImage:titleLabel:yearLabel:typeLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "268799E1-0B8A-4C78-9F82-EC4A22601579"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaniaApp/Scenes/Feed/MovieCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "configureCell(posterImage:titleLabel:yearLabel:typeLabel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "265846E7-26C6-4157-97BB-1F2EC0B1EFC1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "fetchSearchMovies(isScrolled:word:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchMovies(isScrolled:word:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7EDA7E03-99AD-4196-A74E-7BD243791B22"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "collectionView(_:willDisplay:forItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "14BFE684-8AFA-473D-AF45-8C4A4DB6454B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/Scenes/Feed/FeedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "collectionView(_:willDisplay:forItemAt:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "265846E7-26C6-4157-97BB-1F2EC0B1EFC1 - 5c3e79a6318c6faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CinemaniaApp.SearchResponse, CinemaniaApp.ErrosTypes&gt;) -&gt; () in CinemaniaApp.FeedViewModel.fetchMovies(isScrolled: Swift.Bool, word: Swift.String) -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1100">
+               </Location>
+               <Location
+                  uuid = "265846E7-26C6-4157-97BB-1F2EC0B1EFC1 - 5c3e79a6318c6faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CinemaniaApp.SearchResponse, CinemaniaApp.ErrosTypes&gt;) -&gt; () in CinemaniaApp.FeedViewModel.fetchMovies(isScrolled: Swift.Bool, word: Swift.String) -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1144">
+               </Location>
+               <Location
+                  uuid = "265846E7-26C6-4157-97BB-1F2EC0B1EFC1 - 5c3e79a6318c6faa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CinemaniaApp.SearchResponse, CinemaniaApp.ErrosTypes&gt;) -&gt; () in CinemaniaApp.FeedViewModel.fetchMovies(isScrolled: Swift.Bool, word: Swift.String) -&gt; ()"
+                  moduleName = "CinemaniaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/Scenes/Feed/FeedViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1196">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

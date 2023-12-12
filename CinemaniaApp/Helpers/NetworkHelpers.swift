@@ -26,7 +26,6 @@ enum HTTPMethod: String {
 
 enum Endpoint {
     case search(searchWord: String, page: Int?)
-    case titleSearch(title: String)
     case idSearch(id: String)
 }
 
@@ -42,7 +41,7 @@ extension Endpoint: EndpointProtocol {
 
     var path: String {
         switch self {
-        case .search, .titleSearch, .idSearch: return "/"
+        case .search, .idSearch: return "/"
         }
     }
     
@@ -66,12 +65,6 @@ extension Endpoint: EndpointProtocol {
         
         //Add QueryItem
         let urlqueryItemOfApiKey = URLQueryItem(name: "apikey", value: apiToken)
-        
-        if case .titleSearch(let title) = self {
-            components.queryItems = [urlqueryItemOfApiKey,
-                                     URLQueryItem(name: "t", value: title)
-            ]
-        }
         
         if case .idSearch(let id) = self {
             components.queryItems = [urlqueryItemOfApiKey,

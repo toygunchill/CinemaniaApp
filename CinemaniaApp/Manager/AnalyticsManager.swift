@@ -33,17 +33,10 @@ final class AnalyticsManager {
 }
 
 enum AnalyticsEvent {
-    case movieSelected(TitleQueryResponse) // moviesekectedevent olacaktı böyle denedik
+    case movieSelected(TitleQueryResponse)
     var eventName: String {
         switch self {
-        case .movieSelected: return "movie_selected"
+        case .movieSelected: return Constants.AnalyticsEvents.movieSelected
         }
     }
 }
-
-//struct MovieSelectedEvent: Codable {
-//    let title, rated, released: String?
-//    let runtime, genre, director, writer: String?
-//    let actors, plot, language, country: String?
-//    let awards, poster, metascore, imdbRating, imdbID: String?
-//}

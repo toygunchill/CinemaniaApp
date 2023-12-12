@@ -7,9 +7,8 @@
 
 import Foundation
 
-protocol IdAndTitleQueryMakeable: AnyObject {
+protocol IdQueryMakeable: AnyObject {
     func makeQueryWithID(id: String, completion: @escaping (Result<TitleQueryResponse, ErrosTypes>) -> Void)
-    func makeQueryWithTitle(title: String, completion: @escaping (Result< TitleQueryResponse, ErrosTypes>) -> Void)
 }
 
 protocol SearchQueryMakeable: AnyObject {
@@ -22,14 +21,9 @@ final class NetworkManager {
     var coreManager = CoreNetworkManager()
 }
 
-extension NetworkManager: IdAndTitleQueryMakeable {
+extension NetworkManager: IdQueryMakeable {
     func makeQueryWithID(id: String, completion: @escaping (Result<TitleQueryResponse, ErrosTypes>) -> Void) {
         let endPoint = Endpoint.idSearch(id: id)
-        coreManager.request(endPoint, completion: completion)
-    }
-
-    func makeQueryWithTitle(title: String, completion: @escaping (Result< TitleQueryResponse, ErrosTypes>) -> Void) {
-        let endPoint = Endpoint.titleSearch(title: title)
         coreManager.request(endPoint, completion: completion)
     }
 }

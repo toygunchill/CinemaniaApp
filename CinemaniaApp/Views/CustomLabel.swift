@@ -7,13 +7,13 @@
 
 import UIKit
 
-class CustomLabel: UILabel {
+final class CustomLabel: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
         textAlignment = .left
-        text = "Not Found"
+        text = Constants.PlaceholderText.notFound
         numberOfLines = 0
     }
     

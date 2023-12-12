@@ -9,12 +9,13 @@ import Foundation
 
 struct SearchResponse: Codable {
     let search: [Search]?
-    let totalResults, response: String?
+    let totalResults, response, error: String?
 
     enum CodingKeys: String, CodingKey {
         case search = "Search"
         case totalResults
         case response = "Response"
+        case error = "Error"
     }
 }
 

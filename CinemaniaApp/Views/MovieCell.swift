@@ -6,61 +6,63 @@
 //
 
 import UIKit
-import Kingfisher
 
-class MovieCell: UICollectionViewCell {
-    static let identifier = "MovieCell"
+final class MovieCell: UICollectionViewCell {
+    static let identifier = Constants.Identifier.cellIdentifier
     
-    private lazy var posterImage: UIImageView = {
+    private let posterImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFit
-        image.layer.cornerRadius = 12
+        image.contentMode = .scaleAspectFill
+        image.layer.cornerRadius = Constants.CornerRadius.medium
         image.layer.masksToBounds = true
         return image
     }()
     
-    private lazy var titleLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: Constants.Font.large)
         label.textAlignment = .left
         label.lineBreakMode = .byWordWrapping
-        label.numberOfLines = 0
+        label.numberOfLines = 2
+        label.text = Constants.PlaceholderText.notFound
         return label
     }()
     
-    private lazy var yearIcon: UIImageView = {
+    private let yearIcon: UIImageView = {
         let icon = UIImageView()
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.image = UIImage(systemName: "calendar")
+        icon.image = Constants.Images.yearIcon
         icon.tintColor = .secondaryLabel
         return icon
     }()
     
-    private lazy var typeIcon: UIImageView = {
+    private let typeIcon: UIImageView = {
         let icon = UIImageView()
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.image = UIImage(systemName: "movieclapper")
+        icon.image = Constants.Images.typeIcon
         icon.tintColor = .secondaryLabel
         return icon
     }()
     
-    private lazy var yearLabel: UILabel = {
+    private let yearLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: Constants.Font.medium)
         label.textAlignment = .left
         label.textColor = .secondaryLabel
+        label.text = Constants.PlaceholderText.notFound
         return label
     }()
     
-    private lazy var typeLabel: UILabel = {
+    private let typeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: Constants.Font.medium)
         label.textAlignment = .left
         label.textColor = .secondaryLabel
+        label.text = Constants.PlaceholderText.notFound
         return label
     }()
     
@@ -83,35 +85,35 @@ class MovieCell: UICollectionViewCell {
         contentView.addSubview(typeIcon)
         
         NSLayoutConstraint.activate([
-            posterImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.Margin.medium),
-            posterImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.Margin.medium),
-            posterImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.Margin.medium),
-            posterImage.widthAnchor.constraint(equalToConstant: 90),
+            posterImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.Margin.small),
+            posterImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.Margin.small),
+            posterImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.Margin.small),
+            posterImage.widthAnchor.constraint(equalToConstant: Constants.Margin.TripleExtraLarge),
             
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.Margin.medium),
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.Margin.small),
             titleLabel.leadingAnchor.constraint(equalTo: posterImage.trailingAnchor, constant: Constants.Margin.regular),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Constants.Margin.medium),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Constants.Margin.small),
             
-            yearIcon.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: Constants.Margin.medium),
+            yearIcon.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: Constants.Margin.small),
             yearIcon.leadingAnchor.constraint(equalTo: posterImage.trailingAnchor, constant: Constants.Margin.regular),
             
             yearLabel.centerYAnchor.constraint(equalTo: yearIcon.centerYAnchor),
-            yearLabel.leadingAnchor.constraint(equalTo: yearIcon.trailingAnchor, constant: Constants.Margin.medium),
+            yearLabel.leadingAnchor.constraint(equalTo: yearIcon.trailingAnchor, constant: Constants.Margin.small),
             
             typeIcon.topAnchor.constraint(equalTo: yearIcon.bottomAnchor, constant: Constants.Margin.regular),
             typeIcon.leadingAnchor.constraint(equalTo: posterImage.trailingAnchor, constant: Constants.Margin.regular),
             
             typeLabel.centerYAnchor.constraint(equalTo: typeIcon.centerYAnchor),
-            typeLabel.leadingAnchor.constraint(equalTo: typeIcon.trailingAnchor, constant: Constants.Margin.medium),
+            typeLabel.leadingAnchor.constraint(equalTo: typeIcon.trailingAnchor, constant: Constants.Margin.small),
         ])
     }
     
-    func setupBlurView() {
+    private func setupBlurView() {
         let blurEffect = UIBlurEffect(style: .systemMaterial)
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = self.contentView.bounds
         blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        blurView.layer.cornerRadius = 16
+        blurView.layer.cornerRadius = Constants.CornerRadius.large
         blurView.clipsToBounds = true
         self.contentView.addSubview(blurView)
         self.contentView.sendSubviewToBack(blurView)
@@ -119,15 +121,13 @@ class MovieCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 4, left: 8, bottom: 4, right: 8))
+        contentView.frame = contentView.frame.inset(by: Constants.Insets.contentView)
     }
     
     func configureCell(posterImage: String,titleLabel: String, yearLabel: String, typeLabel: String) {
-        if let url = URL(string: posterImage){
-            self.posterImage.kf.setImage(with: url)
-        }
+        self.posterImage.setImage(posterImage)
         self.titleLabel.text = titleLabel
-        self.yearLabel.text = "(\(yearLabel))"
+        self.yearLabel.text = yearLabel
         self.typeLabel.text = typeLabel.capitalized
     }
 }

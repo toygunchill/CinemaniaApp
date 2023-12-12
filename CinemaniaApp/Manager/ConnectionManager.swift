@@ -12,7 +12,7 @@ protocol ConnectionManagerInterface : AnyObject {
     func isConnectedNetwork(completion: @escaping (Bool) -> Void)
 }
 
-class ConnectionManager: ConnectionManagerInterface {
+final class ConnectionManager: ConnectionManagerInterface {
     
     func isConnectedNetwork(completion: @escaping (Bool) -> Void) {
         let monitor = NWPathMonitor()
@@ -26,7 +26,7 @@ class ConnectionManager: ConnectionManagerInterface {
                 monitor.cancel()
             }
         }
-        let queue = DispatchQueue(label: "NetworkMonitor")
+        let queue = DispatchQueue(label: Constants.CmKeys.key)
         monitor.start(queue: queue)
     }
 }

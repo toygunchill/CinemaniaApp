@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FeedViewModelInterface {
-    func fetchSearchMovies(isScrolled: Bool, word: String)
+    func fetchMovies(isScrolled: Bool, word: String)
     func cleanMovies()
     var movies: [Search] { get set }
 }
@@ -28,16 +28,15 @@ final class FeedViewModel {
 }
 
 extension FeedViewModel: FeedViewModelInterface {
-    
     func cleanMovies() {
         self.page = 1
         self.movies = []
         self.isFetched = false
+        self.view?.stopLoadingAnimation()
         self.view?.updateData(data: movies)
     }
     
-    func fetchSearchMovies(isScrolled: Bool, word: String) {
-        
+    func fetchMovies(isScrolled: Bool, word: String) {
         if self.page > 1 {
             if !isScrolled {
                 self.page = 1
@@ -52,27 +51,30 @@ extension FeedViewModel: FeedViewModelInterface {
             self.movies = []
         }
         
-        if word.count >= 2 {
+        if word.count > 2 {
             networkManager?.makeSearchQuery(page: page, word: word, completion: { [weak self] result in
                 guard let self = self else {return}
                 switch result {
                 case .success(let success):
-                    if let result = success.search {
-                        self.movies.append(contentsOf: result)
-                        self.page += 1
-                        self.view?.updateData(data: movies)
-//                        self.view?.reloadCollectionView()
+                    if let error = success.error, movies.count == 0 {
+                        self.view?.stopLoadingAnimation()
+                        self.view?.errorView(error: error)
+                    } else {
+                        if let result = success.search {
+                            self.movies.append(contentsOf: result)
+                            self.page += 1
+                            self.view?.stopLoadingAnimation()
+                            self.view?.updateData(data: movies)
+                        }
                     }
-                    print("************ aldığı \(word) ****************")
-                    print("\(word) için denememm ->>>>>>>>> \(success)")
                 case .failure(let failure):
                     print(failure)
                 }
             })
         } else {
             self.movies = []
+            self.view?.stopLoadingAnimation()
             self.view?.updateData(data: movies)
-            self.view?.reloadCollectionView()
         }
     }
 }
