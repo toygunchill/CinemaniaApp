@@ -72,7 +72,7 @@ final class DetailViewController: UIViewController, UIScrollViewDelegate {
     private lazy var imdbLogo: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = Constants.Images.imdbLogo
+        imageView.image = UIImage.imdblogo
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()

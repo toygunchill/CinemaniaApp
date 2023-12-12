@@ -67,8 +67,6 @@ struct Constants {
     }
     
     struct Images {
-        static let imdbLogo = UIImage(named: "imdblogo")
-        static let notFound = UIImage(named: "notFound")
         static let yearIcon = UIImage(systemName: "calendar")
         static let typeIcon = UIImage(systemName: "movieclapper")
     }
