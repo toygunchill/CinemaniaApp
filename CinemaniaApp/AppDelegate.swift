@@ -34,7 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     }
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        print("FCM Token: \(fcmToken ?? "")")
+        if let fcmToken {
+            print("FCM Token: \(fcmToken)")
+        }
     }
 
     // MARK: UISceneSession Lifecycle
@@ -49,6 +51,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        print("Received remote notification: \(userInfo)")
+        completionHandler(.newData)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.banner, .list, .sound, .badge])
+    }
+
+    // Kullanıcı bildirime dokunduğunda veya etkileşime geçtiğinde
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+
+        print("User responded to notification")
+        completionHandler()
     }
 
 

@@ -182,54 +182,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DB01C4DD-48DF-474D-A2EA-872B8B7A7A0F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaniaApp/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "messaging(_:didReceiveRegistrationToken:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DB01C4DD-48DF-474D-A2EA-872B8B7A7A0F - 50f7cc09a231bbee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CinemaniaApp.AppDelegate.messaging(_: __C.FIRMessaging, didReceiveRegistrationToken: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "CinemaniaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "DB01C4DD-48DF-474D-A2EA-872B8B7A7A0F - 50f7cc09a231bbcf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CinemaniaApp.AppDelegate.messaging(_: __C.FIRMessaging, didReceiveRegistrationToken: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
-                  moduleName = "CinemaniaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyguncil/Desktop/CinemaniaApp/CinemaniaApp/CinemaniaApp/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "136">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2B5C501A-B42E-4717-A3AB-0D1AD4D0557F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
