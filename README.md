@@ -11,8 +11,6 @@
 - URLSession
 - Programmatic UI
 - MVVM
-- Delegate Pattern
-- Unit Tests
 - Kingfisher
 - AutoLayout
 - Firebase Analytics
